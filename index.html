@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login/Signup page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="card">
+        <div class="wrapper">
+            <div class="card-switch">
+                <label class="switch">
+                    <input type="checkbox" class="toggle">
+                    <span class="slider"></span>
+                    <span class="card-side"></span>
+                    <div class="flip-card__inner">
+                        <div class="flip-card__front">
+                            <div class="title">Log in</div>
+                            <form class="flip-card__form" onsubmit="log(event)">
+                                <input id="logMail" class="flip-card__input" name="email" placeholder="Email"
+                                    type="email">
+                                <input id="logPass" class="flip-card__input" name="password" placeholder="Password"
+                                    type="password">
+                                <button class="flip-card__btn" onclick="log(event)">Let`s go!</button>
+                            </form>
+                        </div>
+                        <div class="flip-card__back">
+                            <div class="title">Sign up</div>
+                            <form class="flip-card__form" onsubmit="sign(event)">
+                                <input id="signName" class="flip-card__input" placeholder="Name" type="name">
+                                <input id="signMail" class="flip-card__input" name="email" placeholder="Email"
+                                    type="email">
+                                <input id="signPass" class="flip-card__input" name="password" placeholder="Password"
+                                    type="password">
+                                <button class="flip-card__btn" onclick="sign(event)">Confirm!</button>
+                            </form>
+                        </div>
+                    </div>
+                </label>
+            </div>
+        </div>
+    </div>
+    <div id="target" class="button">
+        
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
